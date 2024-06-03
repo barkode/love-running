@@ -90,6 +90,7 @@ main {
   /* Make main element take up any space to push footer down */
   background-color: lightblue;
   flex: 1 0 auto;
+  margin-top: 47px;
 }
 
 

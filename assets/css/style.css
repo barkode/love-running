@@ -20,7 +20,9 @@ body {
   font-family: Lato, sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Oswald, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -73,15 +75,15 @@ nav {
 
 /* Nav toggle */
 
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
 }
 
-#nav-toggle{
+#nav-toggle {
   display: none;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
   font-size: 2rem;
 }
 
@@ -97,7 +99,7 @@ main {
   height: 600px;
   width: 100%;
   background-color: #ffffff;
-  background: url('../images/hero-image.webp') no-repeat center center/cover;
+  background: url("../images/hero-image.webp") no-repeat center center/cover;
   position: relative;
 }
 
@@ -113,7 +115,8 @@ main {
   padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text > h2,
+#cover-text > h3 {
   color: #ffffff;
 }
 
@@ -132,8 +135,36 @@ main {
   color: #3a3a3a;
 }
 
+/* Styles for reasons section */
+
+#reasons {
+  margin: 20px auto;
+  width: 90%;
+}
+
+#reasons  h2 {
+  font-size: 280%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#benefits-physical div, #benefits-mental div {
+line-height: 20px;
+margin-bottom: 20px;
+}
+
+#benefits  hr {
+  border-top: 1px solid #3a3a3a;
+  margin: 5px 0;
+}
+
+#benefits  p {
+  padding: 0 20px;
+}
+
+
 /* Media query: tablets and larger (768px an up) */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   /* Header */
   nav {
     display: block;
@@ -142,35 +173,34 @@ main {
     width: fit-content;
     padding-left: 1rem;
   }
-#menu {
-  display: flex;
-}
+  #menu {
+    display: flex;
+  }
 
-#menu > li {
-  padding-left: 1rem;
-}
-.nav-toggle-label {
-  display: none;
-}
+  #menu > li {
+    padding-left: 1rem;
+  }
+  .nav-toggle-label {
+    display: none;
+  }
 
-#logo {
-  font-size: 280%;
-  line-height: 75px;
-  margin: 0 0.5rem;
-}
+  #logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
 
-/* Main content */
-main {
-  /* Push main content down to accommodate larger  header*/
-margin-top: 79px;
-}
+  /* Main content */
+  main {
+    /* Push main content down to accommodate larger  header*/
+    margin-top: 79px;
+  }
 
-/* Hero */
-#cover-text {
-  width: 300px;
-  right: 50px;
-}
-
+  /* Hero */
+  #cover-text {
+    width: 300px;
+    right: 50px;
+  }
 }
 
 @media screen and (min-width: 992px) {
